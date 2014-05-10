@@ -1,9 +1,9 @@
-cxref.exe : lex.yy.c
-	gcc -g -o cxref.exe lex.yy.c -ll
+clexer.exe : lex.yy.c
+	gcc -g -o clexer.exe lex.yy.c -ll
 
-lex.yy.c : cxref.l
-	lex cxref.l
+lex.yy.c : clexer.l
+	lex clexer.l
 
 clean : 
-	rm cxref.exe
+	rm clexer.exe
 	rm lex.yy.c
